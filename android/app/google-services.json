@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "715845788423",
+    "project_id": "kbc-flutter-8eee9",
+    "storage_bucket": "kbc-flutter-8eee9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715845788423:android:1abf2d70bc9308bd91dba2",
+        "android_client_info": {
+          "package_name": "com.thegiantgames.quizee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715845788423-3eaq1keuu0705tjpq3djou6otopquolf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thegiantgames.quizee",
+            "certificate_hash": "2019d06d22fa68419e4cd7de0874a2b3f2749291"
+          }
+        },
+        {
+          "client_id": "715845788423-eiainjfpg990jo210m21l48qnksb0kb5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5SfIu7x_6QBhHJ7SEnR3eQiCcsjinyX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715845788423-eiainjfpg990jo210m21l48qnksb0kb5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
