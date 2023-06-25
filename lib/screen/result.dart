@@ -18,6 +18,9 @@ class _ResultState extends State<Result> {
   @override
   Widget build(BuildContext context) {
 
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
+
 
     String total = (widget.score *4 + (5-widget.score)*(-1)).toString();
     print(widget.score);
@@ -46,16 +49,23 @@ class _ResultState extends State<Result> {
                 margin: EdgeInsets.symmetric(horizontal: 30),
                 padding: EdgeInsets.all(6),
 
-                child: Row(
-                  children: [
-                    SizedBox(width: 20,),
-                    Icon(Icons.auto_awesome , size: 40, color: Colors.blue,),
-                    SizedBox(width: 30,),
-                    Text("SCORE GAINED" , style: TextStyle(fontSize: 20 ,fontWeight: FontWeight.bold),),
-                    SizedBox(width: 40,),
-                    Text(total, style: TextStyle(fontSize: 20 ,fontWeight: FontWeight.bold),)
-                  ],
-                ),
+
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+                    children: [
+                      Padding(  padding: EdgeInsets.only(left: width/20 , right: width/30),
+                      child: Icon(Icons.auto_awesome , size: 40, color: Colors.blue, )),
+                      Text("Score Gained" , style: TextStyle(fontSize: 20 ,fontWeight: FontWeight.bold),),
+                      Spacer(),
+                      Padding(
+                        padding:  EdgeInsets.only(right: width/30),
+                        child: Text(total, style: TextStyle(fontSize: 20 ,fontWeight: FontWeight.bold),),
+                      )
+                    ],
+                  ),
+
               ),
               SizedBox(height: 10,),
 
@@ -69,12 +79,17 @@ class _ResultState extends State<Result> {
 
                 child: Row(
                   children: [
-                    SizedBox(width: 20,),
-                    Icon(Icons.check_circle , size: 40, color: Colors.blue,),
-                    SizedBox(width: 18,),
+                    Padding(
+                      padding:  EdgeInsets.only(left: width/20 , right: width/30),
+                      child: Icon(Icons.check_circle , size: 40, color: Colors.blue,),
+                    ),
                     Text("Correct Predictions" , style: TextStyle(fontSize: 20 ,fontWeight: FontWeight.bold),),
-                    SizedBox(width: 20,),
-                    Text(widget.score.toString(), style: TextStyle(fontSize: 20 ,fontWeight: FontWeight.bold),)
+
+                    Spacer(),
+                    Padding(
+                      padding: EdgeInsets.only(right: width/30),
+                      child: Text(widget.score.toString(), style: TextStyle(fontSize: 20 ,fontWeight: FontWeight.bold ), ),
+                    )
                   ],
                 ),
               ),

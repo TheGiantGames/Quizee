@@ -364,12 +364,12 @@ List optionC = [
                                 elevation: 3,
                                 child: Row(
                                   children: [
-                                    Card(
+                                    const Card(
                                       margin: EdgeInsets.only(left: 20),
                                       child: Icon(Mdi.alphaACircle , color: Colors.blue, size: 40,),
                                     ),
                                     SizedBox(width: 20,),
-                                    Text(optionA[widget.quiz]['$a'] , style: TextStyle(fontSize: 16), softWrap: true,)
+                                    Expanded( child: Text(optionA[widget.quiz]['$a'] ,softWrap: true, style: TextStyle(fontSize: 16), ))
                                   ],
                                 ),
                               ),
@@ -397,7 +397,7 @@ List optionC = [
                                       child: Icon(Mdi.alphaBCircle , color: Colors.blue, size: 40,),
                                     ),
                                     SizedBox(width: 20,),
-                                    Text(optionB[widget.quiz]['$a'] , style: TextStyle(fontSize: 16), softWrap: true,)
+                                    Expanded(child: Text(optionB[widget.quiz]['$a'] , style: TextStyle(fontSize: 16), softWrap: true,))
                                   ],
                                 ),
                               ),
@@ -426,7 +426,7 @@ List optionC = [
                                       child: Icon(Mdi.alphaCCircle , color: Colors.blue, size: 40,),
                                     ),
                                     SizedBox(width: 20,),
-                                    Text(optionC[widget.quiz]['$a'] , style: TextStyle(fontSize: 16),softWrap: true,)
+                                    Expanded(child: Text(optionC[widget.quiz]['$a'] , style: TextStyle(fontSize: 16),softWrap: true,))
                                   ],
                                 ),
                               ),
@@ -455,7 +455,7 @@ List optionC = [
                                       child: Icon(Mdi.alphaDCircle , color: Colors.blue, size: 40,),
                                     ),
                                     SizedBox(width: 20,),
-                                    Text(optionD[widget.quiz]['$a'] , style: TextStyle(fontSize: 16),softWrap: true,)
+                                    Expanded(child: Text(optionD[widget.quiz]['$a'] , style: TextStyle(fontSize: 16),softWrap: true,))
                                   ],
                                 ),
                               ),
