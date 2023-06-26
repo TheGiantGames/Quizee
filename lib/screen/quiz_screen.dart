@@ -64,7 +64,7 @@ class _QuizScreenState extends State<QuizScreen> {
 
   List optionA = [
     {
-      '0' :  'Facebook', '1' : 'Kotlin', '2' : 'pubspec.yaml', '3' : 'SafeArea', '4' : 'Profile',
+      '0' :  'Facebook ', '1' : 'Kotlin', '2' : 'pubspec.yaml', '3' : 'SafeArea', '4' : 'Profile',
   },
     {
       '0' :  'Statically typed', '1' : 'A programming language', '2' : ' Type inference', '3' : 'declare()', '4' : 'Yes',
